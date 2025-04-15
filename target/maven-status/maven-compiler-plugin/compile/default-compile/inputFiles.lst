@@ -1,0 +1,11 @@
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/IngestionApp.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/config/WebConfig.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/controller/GlobalExceptionHandler.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/controller/IngestionController.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/dto/ClickHouseConfig.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/dto/FlatFileConfig.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/dto/IngestionRequest.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/model/RecordCountResponse.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/service/ClickHouseService.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/service/FlatFileService.java
+/media/winD/Study/Coding/ClickHouseFlatFile/src/main/java/com/yourorg/ingestion/service/IngestionService.java
