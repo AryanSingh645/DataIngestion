@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 @Service
 public class ClickHouseService {
@@ -52,7 +54,14 @@ public class ClickHouseService {
                 while (rs.next()) {
                     Map<String, Object> row = new LinkedHashMap<>();
                     for (String col : config.getColumns()) {
-                        row.put(col, rs.getObject(col));
+                        Object value = rs.getObject(col);
+                        // Convert LocalDateTime or similar to a proper string format
+                        if (value instanceof LocalDateTime) {
+                            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+                            row.put(col, ((LocalDateTime) value).format(formatter));
+                        } else {
+                            row.put(col, value);
+                        }
                     }
                     result.add(row);
                 }
