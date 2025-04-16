@@ -10,6 +10,10 @@ public class FlatFileConfig {
     private String delimiter;
     private List<String> columns;
 
+    public FlatFileConfig() {
+        // Default constructor for Jackson deserialization
+    }
+
     public FlatFileConfig(String filePath, String delimiter, List<String> columns) {
         this.filePath = filePath;
         this.delimiter = delimiter;
